@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import BeHealthyVideo from './Videos/Be_Healthy.mp4'; // Adjust the path as necessary
 
 const Features = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -47,15 +46,6 @@ const Features = () => {
         <div className={`bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl mx-auto text-center ${isDarkMode ? 'bg-gray-900 text-white' : ''}`}>
           {/* Video Player */}
           <div className="w-full" style={{ aspectRatio: '16/9' }}>
-            <video
-              className="w-full h-full rounded-lg"
-              controls
-              autoPlay
-              src={BeHealthyVideo}
-              title="Video Overview"
-            >
-              Your browser does not support the video tag.
-            </video>
           </div>
         </div>
       </main>
